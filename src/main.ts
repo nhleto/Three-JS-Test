@@ -23,9 +23,14 @@ const torus = new THREE.Mesh(geometry, material)
 const pointlight = new THREE.PointLight(0xffffff)
 pointlight.position.set(10, -10, 5)
 const ambientlight = new THREE.AmbientLight(0xffffff)
+
 const helper = new THREE.PointLightHelper(pointlight)
 const gridHelper = new THREE.GridHelper(200, 50)
+
 const controls = new OrbitControls(camera, renderer.domElement)
+
+const spaceBackground = new THREE.TextureLoader().load('./assets/space.jpeg')
+scene.background = spaceBackground
 
 scene.add(torus, pointlight, ambientlight, helper, gridHelper)
 
