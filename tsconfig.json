@@ -13,7 +13,10 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true
   },
-  "include": ["./src"],
+  "include": [
+    "./src",
+    "../../AppData/Local/JetBrains/WebStorm2021.1/javascript/typings/node/14.17.4/node_modules/@types/node/globals.d.ts"
+  ],
   "typeAcquisition": {
     "include": [
       "three"

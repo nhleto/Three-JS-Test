@@ -12,6 +12,7 @@
     "vite": "^2.3.8"
   },
   "dependencies": {
+    "require": "^2.4.20",
     "three": "^0.130.0"
   }
 }
